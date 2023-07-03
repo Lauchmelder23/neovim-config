@@ -17,8 +17,9 @@ return require('packer').startup(function(use)
     },
   }
   use 'jeffkreeftmeijer/vim-numbertoggle'
-  use 'prabirshrestha/vim-lsp'
-  use 'mattn/vim-lsp-settings'
+  -- use 'prabirshrestha/vim-lsp'
+  -- use 'mattn/vim-lsp-settings'
+  use { 'neoclide/coc.nvim', branch = 'release' }
   use 'prabirshrestha/asyncomplete.vim'
   use 'prabirshrestha/asyncomplete-lsp.vim'
   use 'karb94/neoscroll.nvim'
@@ -38,6 +39,12 @@ return require('packer').startup(function(use)
       }
     end
   }
+
+  use "petertriho/nvim-scrollbar"
+  use "puremourning/vimspector"
+
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+
   -- Lazy loading:
   -- Load on specific commands
   use {'tpope/vim-dispatch', opt = true, cmd = {'Dispatch', 'Make', 'Focus', 'Start'}}
