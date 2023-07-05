@@ -8,7 +8,10 @@ local colors = require("tokyonight.colors").setup()
 require("editorconfig").properties.trim_trailing_whitespace = false
 
 require("nvim-tree").setup({
-	update_cwd = true
+	update_focused_file = {
+		enable = false,
+		update_cwd = false
+	}
 })
 require("mason").setup()
 require('neoscroll').setup()
