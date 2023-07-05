@@ -81,12 +81,12 @@ keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
 
 
 -- Setup formatexpr specified filetype(s)
-vim.api.nvim_create_autocmd("FileType", {
+--[[ vim.api.nvim_create_autocmd("FileType", {
     group = "CocGroup",
     pattern = "typescript,json",
     command = "setl formatexpr=CocAction('formatSelected')",
     desc = "Setup formatexpr specified filetype(s)."
-})
+}) ]]
 
 -- Update signature help on jump placeholder
 vim.api.nvim_create_autocmd("User", {

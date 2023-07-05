@@ -26,6 +26,13 @@ return require('packer').startup(function(use)
   use 'APZelos/blamer.nvim'
   use 'simrat39/symbols-outline.nvim'
 
+  use {
+  	'numToStr/Comment.nvim',
+	config = function()
+		require('Comment').setup()
+	end
+  }
+
 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
