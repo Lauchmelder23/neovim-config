@@ -5,7 +5,9 @@ vim.opt.termguicolors = true
 
 local colors = require("tokyonight.colors").setup()
 
-require("nvim-tree").setup { update_cwd = true, }
+require("nvim-tree").setup({
+	update_cwd = true
+})
 require("mason").setup()
 require('neoscroll').setup()
 
@@ -50,3 +52,20 @@ require("scrollbar").setup{
         Misc = { color = colors.purple },
 	}
 }
+
+require("symbols-outline").setup({
+	keymaps = { -- These keymaps can be a string or a table for multiple keys
+    	close = {"<Esc>", "q"},
+		goto_location = "<Cr>",
+		focus_location = "o",
+		hover_symbol = "<C-space>",
+		toggle_preview = "K",
+		rename_symbol = "r",
+		code_actions = "a",
+		fold = "h",
+		unfold = "l",
+		fold_all = "W",
+		unfold_all = "E",
+		fold_reset = "R"
+	}
+})

@@ -24,6 +24,9 @@ return require('packer').startup(function(use)
   use 'prabirshrestha/asyncomplete-lsp.vim'
   use 'karb94/neoscroll.nvim'
   use 'APZelos/blamer.nvim'
+  use 'simrat39/symbols-outline.nvim'
+
+
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.2',
 -- or                            , branch = '0.1.x',
