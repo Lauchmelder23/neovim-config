@@ -12,3 +12,5 @@ map("n", "<leader><F3>", ":NvimTreeToggle<CR>")
 map("n", "<F3>", ":NvimTreeFindFileToggle<CR>")
 
 map("n", "<C-P>", ":Telescope find_files<cr>")
+
+map("n", "<leader>sc", ":noh<CR>")
