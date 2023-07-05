@@ -10,3 +10,5 @@ set tabstop=4
 set shiftwidth=4
 set autochdir
 colorscheme tokyonight-storm
+
+let g:blamer_enabled = 1
