@@ -8,7 +8,7 @@ end
 
 vim.g.mapleader = '\\'
 
-map("n", "<F3>", ":NvimTreeToggle<CR>")
-map("n", "<leader>r", ":NvimTreeFindFile<CR>")
+map("n", "<leader><F3>", ":NvimTreeToggle<CR>")
+map("n", "<F3>", ":NvimTreeFindFileToggle<CR>")
 
 map("n", "<C-P>", ":Telescope find_files<cr>")
