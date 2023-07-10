@@ -8,7 +8,7 @@ lua require("coc")
 set number relativenumber
 set tabstop=4
 set shiftwidth=4
-set autochdir
+set noautochdir
 colorscheme tokyonight-storm
 
 let g:blamer_enabled = 1
