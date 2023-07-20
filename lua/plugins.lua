@@ -26,6 +26,9 @@ return require('packer').startup(function(use)
   use 'APZelos/blamer.nvim'
   use 'simrat39/symbols-outline.nvim'
 
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
+
   use {
   	'numToStr/Comment.nvim',
 	config = function()
