@@ -117,5 +117,8 @@ return require('packer').startup(function(use)
     "neovim/nvim-lspconfig",
     run = ":MasonUpdate"
     }
+
+  use "ludovicchabant/vim-gutentags"
+  use "preservim/tagbar"
 end)
 

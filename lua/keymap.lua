@@ -12,7 +12,8 @@ map("n", "<leader><F3>", ":NvimTreeToggle<CR>")
 map("n", "<F3>", ":NvimTreeFindFileToggle<CR>")
 
 map("n", "<F4>", ":Buffers<CR>")
-map("i", "<F4>", ":Buffers<CR>")
+
+map("n", "<F2>", ":TagbarToggle<CR>")
 
 map("n", "<C-P>", ":Telescope find_files<cr>")
 map("n", "<leader>s", ":Telescope live_grep glob_pattern=*.{ts,html,c,h,go,json}<cr>")

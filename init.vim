@@ -9,6 +9,8 @@ set number relativenumber
 set tabstop=4
 set shiftwidth=4
 set noautochdir
+set nowrap
+set list
 colorscheme tokyonight-storm
 
 let g:blamer_enabled = 1

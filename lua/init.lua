@@ -8,7 +8,6 @@ local colors = require("tokyonight.colors").setup()
 require("editorconfig").properties.trim_trailing_whitespace = false
 
 require("nvim-tree").setup({
-	update_root = true,
 	update_focused_file = {
 		enable = true,
 		update_cwd = trie

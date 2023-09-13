@@ -1,3 +1,10 @@
 {
-	"typescript.format.enable": false
+	"typescript.format.enable": false,
+	"languageserver": {
+		"golang":{
+			"command": "/home/robert/go/bin/gopls",
+			"rootPatterns": [ "go.mod", "go.sum" ],
+			"filetypes": ["go"]
+		}
+	}
 }
