@@ -118,7 +118,6 @@ return require('packer').startup(function(use)
     run = ":MasonUpdate"
     }
 
-  use "ludovicchabant/vim-gutentags"
   use "preservim/tagbar"
 end)
 

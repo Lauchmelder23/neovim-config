@@ -16,3 +16,5 @@ colorscheme tokyonight-storm
 let g:blamer_enabled = 1
 let g:startify_change_to_dir = 0
 let g:startify_change_to_vcs_root = 1
+
+highlight LineNr guifg=#ff57d8

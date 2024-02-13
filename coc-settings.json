@@ -6,5 +6,9 @@
 			"rootPatterns": [ "go.mod", "go.sum" ],
 			"filetypes": ["go"]
 		}
-	}
+	},
+
+	"rust-analyzer.inlayHints.chainingHints": true,
+    "rust-analyzer.inlayHints.typeHints.enable": true,
+    "rust-analyzer.inlayHints.parameterHints": true,}
 }
