@@ -80,10 +80,6 @@ return require('packer').startup(function(use)
     requires = {{'hrsh7th/vim-vsnip', opt = true}, {'hrsh7th/vim-vsnip-integ', opt = true}}
   }
 
-  -- You can specify rocks in isolation
-  use_rocks 'penlight'
-  use_rocks {'lua-resty-http', 'lpeg'}
-
   -- Plugins can have post-install/update hooks
   use({'iamcco/markdown-preview.nvim', run = 'cd app && npm install', setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
