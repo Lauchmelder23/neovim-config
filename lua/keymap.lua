@@ -20,6 +20,8 @@ map("n", "<leader>s", ":Telescope live_grep glob_pattern=*.{ts,html,c,h,go,json}
 
 map("n", "<leader>sc", ":noh<CR>")
 
+map("n", "gs", ":call CocAction('jumpDefinition', 'split')<CR>")
+
 map("n", "<leader>1", "1gt")
 map("n", "<leader>2", "2gt")
 map("n", "<leader>3", "3gt")
