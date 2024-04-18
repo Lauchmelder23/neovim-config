@@ -10,7 +10,6 @@ return {
 	"junegunn/fzf.vim",
 	"petertriho/nvim-scrollbar",
 	"puremourning/vimspector",
-	"kylechui/nvim-surround",
 	"folke/tokyonight.nvim",
 	"rebelot/kanagawa.nvim",
 	"wellle/context.vim",
@@ -60,6 +59,16 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function() 
 			require("gitsigns").setup() 
+		end
+	},
+	{
+		"kylechui/nvim-surround",
+		version = "*",
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({
+				
+			})
 		end
 	}
 }
