@@ -14,7 +14,11 @@ return {
 	"rebelot/kanagawa.nvim",
 	"wellle/context.vim",
 	"andweeb/presence.nvim",
-	
+	{
+		'numToStr/Comment.nvim',
+		opts={},
+		lazy = false,
+	},
 	{
 		"nvim-tree/nvim-tree.lua", 
 		dependencies = {"nvim-tree/nvim-web-devicons"}
@@ -70,5 +74,9 @@ return {
 				
 			})
 		end
+	},
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" }
 	}
 }
