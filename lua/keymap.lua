@@ -33,3 +33,6 @@ map("n", "<leader>9", "9gt")
 map("n", "<leader>0", ":tablast<cr>")
 
 map("n", "<leader><F9>", ":call vimspector#ToggleBreakpoint( input( \"Enter condition: \" ) )<CR>")
+
+map("n", "<leader>t", ":bo 15split +term<CR>")
+map("t", "<ESC>", "<C-\\><C-N>")
