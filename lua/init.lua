@@ -112,6 +112,8 @@ require('lualine').setup {
   extensions = {}
 }
 
+require("kanagawa").setup()
+
 vim.api.nvim_create_autocmd("TermClose", {
 	callback = function() 
 		vim.cmd("close")

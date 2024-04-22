@@ -17,7 +17,6 @@ set nofoldenable
 
 "colorscheme tokyonight-storm
 
-lua require("kanagawa")
 colorscheme kanagawa
 
 let g:blamer_enabled = 1

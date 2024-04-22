@@ -34,5 +34,24 @@ map("n", "<leader>0", ":tablast<cr>")
 
 map("n", "<leader><F9>", ":call vimspector#ToggleBreakpoint( input( \"Enter condition: \" ) )<CR>")
 
+map("", "<UP>", "<NOP>")
+map("", "<DOWN>", "<NOP>")
+map("", "<RIGHT>", "<NOP>")
+map("", "<LEFT>", "<NOP>")
+
+map("i", "<UP>", "<NOP>")
+map("i", "<DOWN>", "<NOP>")
+map("i", "<RIGHT>", "<NOP>")
+map("i", "<LEFT>", "<NOP>")
+
 map("n", "<leader>t", ":bo 15split +term<CR>")
 map("t", "<ESC>", "<C-\\><C-N>")
+
+map("n", "<A-j>", ":m .+1<CR>==")
+map("n", "<A-k>", ":m .-2<CR>==")
+
+map("i", "<A-j>", "<Esc>:m .+1<CR>==gi")
+map("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
+
+map("v", "<A-j>", ":m '>+1<CR>gv=gv")
+map("v", "<A-k>", ":m '<-2<CR>gv=gv")
