@@ -23,6 +23,9 @@ let g:blamer_enabled = 1
 let g:startify_change_to_dir = 0
 let g:startify_change_to_vcs_root = 1
 
+inoremap <silent><expr> <UP> coc#pum#visible() ? coc#pum#prev(1) : ""
+inoremap <silent><expr> <DOWN> coc#pum#visible() ? coc#pum#next(1) : ""
+
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :

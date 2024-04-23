@@ -39,8 +39,6 @@ map("", "<DOWN>", "<NOP>")
 map("", "<RIGHT>", "<NOP>")
 map("", "<LEFT>", "<NOP>")
 
-map("i", "<UP>", "<NOP>")
-map("i", "<DOWN>", "<NOP>")
 map("i", "<RIGHT>", "<NOP>")
 map("i", "<LEFT>", "<NOP>")
 
