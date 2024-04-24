@@ -11,7 +11,7 @@ set tabstop=4
 set shiftwidth=4
 set noautochdir
 set nowrap
-set list
+set list listchars=tab:▎\ ,trail:·,precedes:<,extends:>
 set foldmethod=indent
 set foldlevel=99
 set nofoldenable
