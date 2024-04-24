@@ -1,4 +1,5 @@
 let g:vimspector_enable_mappings = "VISUAL_STUDIO"
+let g:startify_fortune_use_unicode = 1
 
 "lua require("plugins")
 lua require("init")
