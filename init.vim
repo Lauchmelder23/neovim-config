@@ -27,6 +27,9 @@ let g:startify_change_to_vcs_root = 1
 inoremap <silent><expr> <UP> coc#pum#visible() ? coc#pum#prev(1) : ""
 inoremap <silent><expr> <DOWN> coc#pum#visible() ? coc#pum#next(1) : ""
 
+"Fix escape sending user to normal mode in fzf buffers
+autocmd FileType fzf tnoremap <buffer><silent><ESC> <ESC>
+
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#_select_confirm() :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
