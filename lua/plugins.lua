@@ -14,6 +14,7 @@ return {
 	"rebelot/kanagawa.nvim",
 	"wellle/context.vim",
 	"andweeb/presence.nvim",
+	"vimsence/vimsence",
 	{
 		'numToStr/Comment.nvim',
 		opts={},
