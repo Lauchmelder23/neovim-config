@@ -49,3 +49,5 @@ let g:coc_snippet_next = '<tab>'
 
 "highlight LineNr guifg=#ff57d8
 highlight LineNr guifg=#fcc35a
+set noexpandtab
+
