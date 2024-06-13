@@ -36,8 +36,8 @@ autocmd FileType fzf tnoremap <buffer><silent><ESC> <ESC>
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#_select_confirm() :
-      \ CheckBackspace() ? "\<TAB>" :
       \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ CheckBackspace() ? "\<TAB>" :
       \ "\<TAB>"
 
 function! CheckBackspace() abort

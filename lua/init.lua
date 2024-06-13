@@ -46,6 +46,14 @@ require("telescope").setup{
 			"node_modules"
 		}
 	},
+	pickers = {
+		find_files = {
+		  theme = "ivy"
+		},
+    live_grep = {
+      theme = "ivy"
+    }
+	},
 	extensions = {
 		fzf = {
 			fuzzy = true,
