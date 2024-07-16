@@ -19,6 +19,12 @@ vim.g.loaded_netrwPlugin = 1
 
 vim.opt.termguicolors = true
 
+vim.filetype.add({
+  extension = {
+    pl = 'prolog'
+  }
+})
+
 local colors = require("tokyonight.colors").setup()
 
 require("editorconfig").properties.trim_trailing_whitespace = false
@@ -54,7 +60,7 @@ require("telescope").setup{
 		},
     live_grep = {
       theme = "ivy"
-    }
+    } 
 	},
 	extensions = {
 		fzf = {

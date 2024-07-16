@@ -43,7 +43,8 @@ map("", "<LEFT>", "<NOP>")
 map("i", "<RIGHT>", "<NOP>")
 map("i", "<LEFT>", "<NOP>")
 
-map("n", "<leader>t", ":bo 15split +term<CR>")
+map("n", "<leader>c", ":bo 15split +term<CR>")
+map("n", "<leader>t", ":TodoTelescope theme=ivy<CR>")
 map("t", "<ESC>", "<C-\\><C-N>")
 
 map("n", "<A-j>", ":m .+1<CR>==")

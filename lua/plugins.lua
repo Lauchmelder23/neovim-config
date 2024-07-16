@@ -14,6 +14,7 @@ return {
 	"rebelot/kanagawa.nvim",
 	"andweeb/presence.nvim",
 	"nvim-treesitter/nvim-treesitter-context",
+	"sindrets/diffview.nvim",
 	"vimsence/vimsence",
 	{
 		'numToStr/Comment.nvim',
@@ -112,5 +113,10 @@ return {
 				}
 			}
 		end
+	},
+	{
+		"folke/todo-comments.nvim",
+		dependencies = { "nvim-lus/plenary.nvim" },
+		opts = {}
 	}
 }
