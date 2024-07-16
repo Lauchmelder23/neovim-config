@@ -40,6 +40,8 @@ require'nvim-treesitter.configs'.setup {
     }
 }
 
+require'treesitter-context'
+
 require("telescope").setup{
 	defaults = {
 		file_ignore_patterns = {

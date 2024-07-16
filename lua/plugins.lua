@@ -12,8 +12,8 @@ return {
 	"puremourning/vimspector",
 	"folke/tokyonight.nvim",
 	"rebelot/kanagawa.nvim",
-	"wellle/context.vim",
 	"andweeb/presence.nvim",
+	"nvim-treesitter/nvim-treesitter-context",
 	"vimsence/vimsence",
 	{
 		'numToStr/Comment.nvim',
