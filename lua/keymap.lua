@@ -55,3 +55,6 @@ map("i", "<A-k>", "<Esc>:m .-2<CR>==gi")
 
 map("v", "<A-j>", ":m '>+1<CR>gv=gv")
 map("v", "<A-k>", ":m '<-2<CR>gv=gv")
+
+map('n', '<leader>p', '<Cmd>BufferPick<CR>', opts)
+map('n', '<leader>d', '<Cmd>BufferPickDelete<CR>', opts)

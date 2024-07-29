@@ -15,6 +15,7 @@ return {
 	"andweeb/presence.nvim",
 	"nvim-treesitter/nvim-treesitter-context",
 	"sindrets/diffview.nvim",
+	"romgrk/barbar.nvim",
 	"vimsence/vimsence",
 	{
 		'numToStr/Comment.nvim',
@@ -31,7 +32,6 @@ return {
 	},
 	{
 		"nvim-telescope/telescope.nvim",
-		dependencies = {"nvim-lua/plenary.nvim"}
 	},
 	{
 		"nvim-telescope/telescope-fzf-native.nvim",
@@ -62,7 +62,6 @@ return {
 	},
 	{
 		"lewis6991/gitsigns.nvim", 
-		dependencies = { "nvim-lua/plenary.nvim" },
 		config = function() 
 			require("gitsigns").setup() 
 		end
@@ -116,7 +115,6 @@ return {
 	},
 	{
 		"folke/todo-comments.nvim",
-		dependencies = { "nvim-lus/plenary.nvim" },
 		opts = {}
 	}
 }
