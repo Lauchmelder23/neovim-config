@@ -25,8 +25,9 @@ set nofoldenable
 colorscheme kanagawa
 
 let g:blamer_enabled = 1
-let g:startify_change_to_dir = 0
+let g:startify_change_to_dir = 1
 let g:startify_change_to_vcs_root = 1
+let g:startify_bookmarks = map(filter(globpath('/home/robert/repos', "*", 0, 1), 'isdirectory(v:val)'), {_,val -> { split(val, '/')[-1]: val}})
 
 inoremap <silent><expr> <UP> coc#pum#visible() ? coc#pum#prev(1) : ""
 inoremap <silent><expr> <DOWN> coc#pum#visible() ? coc#pum#next(1) : ""

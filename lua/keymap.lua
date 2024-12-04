@@ -15,7 +15,7 @@ map("n", "<F2>", ":TagbarToggle<CR>")
 map("n", "<leader>e", ":CocList diagnostics<CR>")
 
 map("n", "<C-P>", ":Telescope find_files<cr>")
-map("n", "<leader>s", ":Telescope live_grep glob_pattern=*.{ts,html,c,h,go,json,py,sh,lua,vim,rs,txt}<cr>")
+map("n", "<leader>s", ":Telescope live_grep glob_pattern=*.{ts,html,c,cc,cpp,h,go,json,py,sh,lua,vim,rs,txt}<cr>")
 
 map("n", "<leader>sc", ":noh<CR>")
 
@@ -58,3 +58,5 @@ map("v", "<A-k>", ":m '<-2<CR>gv=gv")
 
 map('n', '<leader>p', '<Cmd>BufferPick<CR>', opts)
 map('n', '<leader>d', '<Cmd>BufferPickDelete<CR>', opts)
+
+map('n', '<leader>g', ':DiffviewOpen<CR>')

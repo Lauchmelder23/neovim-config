@@ -28,13 +28,13 @@ vim.filetype.add({
 local colors = require("tokyonight.colors").setup()
 
 require("editorconfig").properties.trim_trailing_whitespace = false
+require('neoscroll').setup()
 
 require("nvim-tree").setup({
 	update_focused_file = {
 		enable = true
 	}
 })
-require('neoscroll').setup()
 
 require'nvim-treesitter.configs'.setup {
     ensure_installed = { "c", "go", "typescript" },
@@ -137,3 +137,9 @@ vim.api.nvim_create_autocmd("TermClose", {
 })
 
 require("ibl").setup()
+
+vim.g.barbar_auto_setup = false
+
+require'barbar'.setup {
+  letters = 'asdfjkl;ghnmxcvbziowerutyqpASDFJKLGHNMXCVBZIOWERUTYQP'
+}
